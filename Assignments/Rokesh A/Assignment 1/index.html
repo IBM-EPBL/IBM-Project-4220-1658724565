@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=PJWiyJguVn8mVkXDDuFelS_hasS3DHUB2XOXSosl9kzbM_GfHHKr_PlIHwHPpyJJEuIvBmbmONx8rnjTAiNQ4qff-PI_ul___uT5_hIOtgBuIMwag3x5oHw3KZHKItEhVBnzMhdZ5uRPyfXwXBQufyjRHOINgtCvjf7RlmPIadMHNS8aZIrDEgnXv5GLl6EQ84KGvY2a517dpmEjN2hH_3M8uyHKG1aSdWbC28PLVoIqaE-QfLKrWPX_YuTf0GOS4yyU8PkMBjJ2r0bQuDmXYg2kmSNlG_t1FNIO8yT0X9LyBtfvxwHD-QRkrIsB9usl_rJTYUxQL8q7rCbfLUk9NQwdnxIy6U4xjYJkLgGXEGlSQh87pRH7oOdHQb2gOnMXMOTwn6LIGlHb5q7__bztq-d8KhQlgwvCjWZKpr2OHSb0TyJrk2Um-8zKpFYTEQKqjhqRvTGZz8UD4RVeOojUj88lUTV4fUZZzjWdI3Ieq6U6H9Tew2hGjsC3CkAlTRH21jVxwtYFXETJ2QsBMTScfJ-ap6MdDLthbFdgG-n5VXq7zdMyXaxBn1aR_48yUa5d8UYtar6V-5Oe_QLNpJS1HzDNrZ0yXk2B-Ug_lnVyYoo_x6gyNxmlwNr4yggHoZ7DhZ3euCM4KkFCEl2AiiKiQdJo6ICYJyRTcmUFwmmmvp3AUNUXZpeTLqj52gqfTEocXtghO9jzprbVNO5NUmOzOkCZIBKyKupVCQNvGPDIG1W7Yfix6ait-Pc9mWwZ-tXo9q41dmq3OMOS8Wk_etPyTegW-hGDaQiEvjlfNn9sukTmxKx5W9RBIRvc0iKFbXIsR6c1EI5db89D6X4W_jiX-o3EYZqS7AvgwYD75jnA8mxQ5i34cABe3-_qQUFQJh-csxADTSUEW6sB6dGE1Dezd0CKU_hpu4T9lvWa3m02UeoLY-Ylu3VAL01D-y1WEz2Z9IXb27O4h2E8T7cvw8t2A7SrwcT1DbW4EPCwMZ8Ar7-gqM52hs8a715v_D-XOrZmSz_l4YP8ddJ-oi4a1rJnADI-F_9W5rtrds2xoz_IrRjq02uSTuzUI1QsxXI773fK_rBJxF3En5p8Xsp-8HpOXBXWjNNF-L3AbP4_q8l_AH2Y6ToMEOZugtKjzC_nw0wHftspwsRUJXXGOGGouaR-D799-QXG6OWl1-ypBqpubPIgHafthlCua_5amt3cp-fE7LDdAx7qlhC1wJFgmqT_c_x2vRN2vc3r8byut5WUP7qqAS3WAu7VLU6IDAJ3VYZGigB3wJnNAqEHXgg1QNg8GVtOvsw4O4lCqMTviJAuyxF0qughAkN479nqZqbfTM67xF2vkkAbNES5_mjmOSWsp0clJ_CKwLKZDi8zuRuSosVECdxxfaR6vTNhosApHau5dGiSNvtUQ6DHHOhwojcQQRbczFTYxAhUT5-8bb_s2dmCg-GlC9xnb_XQfN8B7IOgaZdrJxudT01aZZmiVZ0FZg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9kb2MtMDQtYXMtZG9jcy5nb29nbGV1c2VyY29udGVudC5jb20vZG9jcy9zZWN1cmVzYy9raHFlbWM1a2FwMDE4djU5ZDJ2NjBhZjdpNmVpNXRvci85NzNyMnIxMnUxcjdxZzh1NmEwM3RqZHFsMGw5bW5sMy8xNjYzMzI3NjUwMDAwLzE1NTI4NTQ0NzI3NDMwNTM1MTA5LzE1MDA1ODEwNTU0MzQ5MzY1Mzk0LzFQTjJMMjZlUnQyeW9FVE1QMzdySEEya1hyZFBscEs2Uz9lPWRvd25sb2FkJmF4PUFMVzktc0FNTTZEczJWdUJnNGFTZVkzeHhycENMOXJmYkRwYjdaT3VzaWZmcENmQXkxMW1WaDdRT1FGbFNtVU54TFdJNVRHUVFaenpTTk9icjhFcDBhX21oMDhFdm9DR2hSbkt6UWJ3V1pDbnd2ajRhSkJqZjJrWGlOeVRBcXB5RGN0TmY2bDJhWHNuY3lRMFFyclVGelhtOG5oR0FEdFF6Z2N0X0FzQWlhOVU3Rm5wZ3NSeTBRLTlBWGZOcHdLcHhqbkl6ZHJ5RG5JS2RaSEFOQUM4OUFrZklfUENVZjJlQ25IMkR3b0g0NGlOTlZrY2pvM1cxY0VvYWpGTzdKTWRsRjNTRF80amJVcmJnVlkxU2NlSjh4T29JbXVGZ2dVS1N0a0lHR1I5bWRGRk52VTBvVzNaR2pFd0VicmppRTYzSDliS2hhQ3FJN0lDNjhHeUFYQmlmUms3OGdzSGFoSUZGSDQyWWF3bUtRVktGbkVQUmlSUFlod0pzekh4YlJGZnU5MlZwV1F0aTlCd2xHR1pzWU9fWjl6Q0ZTbE9vY0NRUUgxVElMdEY4WEVXdGxqdFJOc1VwOFE5YjJ3TzlHbjlmYU5FcXhKWW5hUTVFLVhFQktLUll3RnFLQnNTLWVpd3N4VmRFaC1SdkNOcEFFbG43UkhtdFl4UGNaYnlLNFU3TGswZ1ZfQ2dpaUlCM1ozMnIxb1NRTWh5ZHozN3ZnMVlfTGxvb284alNMN2xCMjJJN3hHdVBGM0pmZkpUejhhQ3RhODhEY1daQ1RHdExMWkp4UVVNQUpfMUI5SkdHX19yUl9PYU5Yby1LWnBzd0FCMTNfVm1MMzRic21uMGtWTjNKdFhhZWg2TS1qZmJvdERvSUtzdkVpOFAtVUkzbkVBQjhmZVlrZ0ZDRVcxS3BodW1iZ25HTXFSM1duRmU3VWpWNnVJNWZCNkd5T2JOQURnQVB6OHImdXVpZD0xMDFjNTU3Mi1hODVmLTQ4ZTQtYWUxMy1mNDVkYzQyMGM4NjkmYXV0aHVzZXI9MCZub25jZT1uYmdzZHA2bTRybTI4JnVzZXI9MTUwMDU4MTA1NTQzNDkzNjUzOTQmaGFzaD1uM3FkZmFjdWk5aWcwY3Y3ZnBhYTllZTNvMnI1YnQ3dg"/></head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Jackie"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Jackie">Tom</h1>
+
+            <p class="title">Web developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="" class="contact-link"
+                  >abc@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="" class="contact-link"
+                  >+91-9431522185</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">October 08,2000</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Chennai</address>
+              </div>
+            </li>
+          </ul>
+
+      </aside>
+
+
+      <div class="main-content">
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+          </ul>
+        </nav>
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm Web Designer from Chennai, India
+              working in web development and print media. I am pursuing my Bachelor's Degree in Panimalar Engineering College
+
+          </section>
+
+
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
+
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                  <p class="service-item-text">
+                    Professional development of applications for iOS and
+                    Android.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Photography</h4>
+
+                  <p class="service-item-text">
+                    I make high-quality photos of any category at a professional
+                    level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web design</h5>
+                  <data value="80">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Graphic design</h5>
+                  <data value="70">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Branding</h5>
+                  <data value="90">60%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">WordPress</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+   
+
+        
+        </article>
+
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
