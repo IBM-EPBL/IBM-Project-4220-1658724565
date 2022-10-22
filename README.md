@@ -1,5 +1,6 @@
-# IBM-Project-4220-1658724565
-Personal Expense Tracker Application
+# Personal Expense Tracker Application
+
+## IBM-Project-4220-1658724565
 
 Team Members:
 
@@ -8,7 +9,7 @@ Team Members:
 3.SAI KUMAR M - 211419104226<br>
 4.TARUN V - 211419104288<br>
 
-Panimalar Engineering College
+PANIMALAR ENGINEERING COLLEGE
 
 Software Required:
 Python, Flask , Docker
