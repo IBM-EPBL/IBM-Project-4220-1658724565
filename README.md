@@ -1,10 +1,10 @@
 # Personal Expense Tracker Application
 
-## IBM-Project-4220-1658724565
+**Bold** IBM-Project-4220-1658724565
 
-### PANIMALAR ENGINEERING COLLEGE
+**Bold** PANIMALAR ENGINEERING COLLEGE
 
-Team Members:
+**Bold**Team Members:
 
 1.RAHUL S (TEAM LEAD) - 211419104209 <br>
 2.ROKESH A - 211419104225<br>
@@ -13,10 +13,10 @@ Team Members:
 
 
 
-Software Required:<br>
+**Bold**Software Required:<br>
 Python, Flask , Docker<br>
 
-System Required:<br>
+**Bold**System Required:<br>
 8GB RAM,Intel Core i3,OS-Windows/Linux/MAC ,Laptop or Desktop<br>
 
 In simple words, personal finance entails all the financial decisions and activities that a Finance app makes your life easier by helping you to manage your finances<br> efficiently. A personal finance app will not only help you with budgeting and accounting but also give you helpful insights about money management.<br>
